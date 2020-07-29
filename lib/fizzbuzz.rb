@@ -1,11 +1,13 @@
-def fizzbuzz(number)
-  if number % 3 == 0 && number % 5 == 0
+class Integer
+def fizzbuzz
+  if self % 3 == 0 && self % 5 == 0
     return "FizzBuzz"
-  elsif number % 3 == 0
+  elsif self % 3 == 0
     return "Fizz"
-  elsif number % 5 == 0
+  elsif self % 5 == 0
     return "Buzz"
   else
-    return number
+    return self
   end
+end
 end
